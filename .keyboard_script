@@ -2,7 +2,7 @@
 
 # Initialize macro keys
 g910-led -mr 1
-g910-led -mn 7
+g910-led -mn 0
 
 g910-led -g mr ffffff
 g910-led -g mn ffffff
@@ -75,9 +75,9 @@ g910-led -kn pagedown 7CFC00
 
 
 # Set backspace, escape, and delete red.
-g910-led -kn delete 600000
-g910-led -kn backspace 600000
-g910-led -kn escape 600000
+g910-led -kn delete ff0000
+g910-led -kn backspace ff0000
+g910-led -kn escape ff0000
 
 
 
@@ -104,10 +104,10 @@ g910-led -kn winr FF69B4
 g910-led -kn winl FF69B4
 
 # set logo to white
-g910-led -gn logo ffffff
+g910-led -fx-store breathing logo ffffff f
 
-# set logo to white
-g910-led -mr 1 ffffff
+g910-led --startup-mode color    
+
 
 
 # commit changes
