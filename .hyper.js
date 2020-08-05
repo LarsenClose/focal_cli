@@ -146,24 +146,30 @@ module.exports = {
 //      height: 1400 , // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
 //    },
 
-     overlay: {
-       alwaysOnTop: false,
-       animate: false,
-       hasShadow: false,
-       hideDock: false,
-       hideOnBlur: false,
-       hotkeys: ['Control+Space'],
-       position: 'right',
-       primaryDisplay: false,
-       resizable: true,
-       startAlone: false,
-       startup: false,
-       size: 0.3,
-       tray: false,
-       unique: false
-     }
-
-
+overlay: {
+	alwaysOnTop: false,
+	animate: false,
+	hasShadow: false,
+	hideDock: false,
+	hideOnBlur: false,
+	hotkeys: {
+		open: ['Space+Alt'], // On MacOS hotkey is default to Option + Space!
+		close: ['Space+Alt+CommandOrControl'], // On MacOS hotkey is default to Option + Escape!
+	},
+	
+	position: 'right',
+	primaryDisplay: false,
+	resizable: true,
+	size: {
+		width: 0.3,
+		height: 1
+		
+	},
+	startAlone: false,
+	startup: false,
+	tray: true,
+	unique: false
+}
 
 
 
@@ -178,8 +184,11 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hyper-snazzy",
-    "hyper-highlight-active-pane",
-    "hyperterm-overlay",
+    "hyper-highlight-active-pane", 
+    "hyper-overlay",
+    "hyper-tab-icons",
+    "hyper-blink",
+    "hyperminimal",
   ],
 
   // in development, you can create a directory under

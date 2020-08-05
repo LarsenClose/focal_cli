@@ -103,8 +103,15 @@ g910-led -kn space FF69B4
 g910-led -kn winr FF69B4
 g910-led -kn winl FF69B4
 
+# Set c, v, menu, insert, tab purple
+g910-led -k "c" F000FF
+g910-led -k "v" F000FF
+g910-led -k menu F000FF
+g910-led -k insert F000FF
+g910-led -k tab F000FF
+
 # set logo to white
-g910-led -fx-store breathing logo ffffff f
+g910-led -fx-store color logo ffffff
 
 g910-led --startup-mode color    
 
