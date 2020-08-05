@@ -11,7 +11,7 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 13 ,
 
     // font family with optional fallbacks
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -32,7 +32,7 @@ module.exports = {
     cursorColor: 'rgba(248,28,229,0.8)',
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: '#000',
+    cursorAccentColor: '#FFF',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
     cursorShape: 'UNDERLINE',
@@ -51,7 +51,7 @@ module.exports = {
     selectionColor: 'rgba(248,28,229,0.3)',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#000',
 
     // custom CSS to embed in the main window
     css: '',
@@ -146,30 +146,30 @@ module.exports = {
 //      height: 1400 , // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
 //    },
 
-overlay: {
+    overlay: {
 	alwaysOnTop: false,
 	animate: false,
 	hasShadow: false,
 	hideDock: false,
 	hideOnBlur: false,
 	hotkeys: {
-		open: ['Space+Alt'], // On MacOS hotkey is default to Option + Space!
-		close: ['Space+Alt+CommandOrControl'], // On MacOS hotkey is default to Option + Escape!
+		open: ['Space + Alt'], // On MacOS hotkey is default to Option + Space!
+		close: ['Space + Alt'], // On MacOS hotkey is default to Option + Escape!
 	},
 	
 	position: 'right',
 	primaryDisplay: false,
 	resizable: true,
 	size: {
-		width: 0.3,
+		width: 0.25,
 		height: 1
 		
 	},
-	startAlone: false,
-	startup: false,
+	startAlone: true,
+	startup: true,
 	tray: true,
 	unique: false
-}
+	}
 
 
 
@@ -189,7 +189,8 @@ overlay: {
     "hyper-tab-icons",
     "hyper-blink",
     "hyperminimal",
-    "hyper-pane"
+    "hyper-pane",
+
   ],
 
   // in development, you can create a directory under
