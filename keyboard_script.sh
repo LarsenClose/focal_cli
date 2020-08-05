@@ -81,13 +81,13 @@ g910-led -kn escape ff0000
 
 
 
-# # Set group multimedia to white
-g910-led -kn mute 000000
-g910-led -kn play 000000
-g910-led -kn stop 000000
-g910-led -kn prev 000000
-g910-led -kn next 000000
-g910-led -g multimedia 000000
+# Set group multimedia to white
+# g910-led -kn mute ffffff
+# g910-led -kn play ffffff
+# g910-led -kn stop ffffff
+# g910-led -kn prev ffffff
+# g910-led -kn next ffffff
+# g910-led -g multimedia ffffff
 
 # Set hotpink keys
 g910-led -kn numenter FF69B4
