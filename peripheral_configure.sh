@@ -143,6 +143,6 @@ ratbagctl "Logitech Gaming Mouse G502" profile 0 led 1 set color ff69b3
 ratbagctl "Logitech Gaming Mouse G502" profile 0 enable
 
 # Load profile for synthetic main
-/home/lclose/OpenRGB/OpenRGB --startminimized --profile ~/synthetic.orp
+/home/lclose/OpenRGB/OpenRGB --startminimized --profile ~/synthetic.orp 
 
 
