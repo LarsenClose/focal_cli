@@ -2,10 +2,7 @@
 
 # Initialize macro keys
 g910-led -mr 1
-g910-led -mn 0
-
-g910-led -g mr ffffff
-g910-led -g mn ffffff
+g910-led -mn 0 
 
 # Set gkeys independence
 g910-led -gkm 1
@@ -14,16 +11,16 @@ g910-led -gkm 1
 g910-led -gn keys 1261A0
 
 # Set keys borders lighter shade
-g910-led -kn open_bracket 1490E1
-g910-led -kn close_bracket 1490E1
-g910-led -kn semicolon 1490E1
-g910-led -kn dollar 1490E1
-g910-led -kn quote 1490E1
-g910-led -kn comma 1490E1
-g910-led -kn period 1490E1
-g910-led -kn slash 1490E1
-g910-led -kn tab 1490E1
-g910-led -kn capslock 1490E1
+g910-led -kn open_bracket ADD8E6
+g910-led -kn close_bracket ADD8E6
+g910-led -kn semicolon ADD8E6
+g910-led -kn dollar ADD8E6
+g910-led -kn quote ADD8E6
+g910-led -kn comma ADD8E6
+g910-led -kn period ADD8E6
+g910-led -kn slash ADD8E6
+g910-led -kn tab ADD8E6
+g910-led -kn capslock ADD8E6
 
 
 # Set function group, arrows and awsd white
@@ -63,7 +60,6 @@ g910-led -gn modifiers FFFFFF
 
 # Set key highlights bright green 
 g910-led -kn ctrlr 0FFF00
-g910-led -kn ctrll 0FFF00
 g910-led -kn printscr 0FFF00
 g910-led -kn backslash 0FFF00
 g910-led -kn num. 0FFF00
@@ -103,12 +99,17 @@ g910-led -kn space FF69B4
 g910-led -kn winr FF69B4
 g910-led -kn winl FF69B4
 
-# Set c, v, menu, insert, tab purple
+# Set c, v, menu, insert, tab, left_control to purple
 g910-led -k "c" F000FF
 g910-led -k "v" F000FF
 g910-led -k menu F000FF
 g910-led -k insert F000FF
 g910-led -k tab F000FF
+g910-led -k ctrll F000FF
+
+
+g910-led -k home 00008B
+#g910-led -k end FF0000
 
 # set logo to white
 g910-led -fx-store color logo ffffff
