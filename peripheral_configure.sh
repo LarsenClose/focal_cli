@@ -1,8 +1,13 @@
 #!/bin/bash
 
+# Store on board values for startup test
+#g910-led -fx-store color all ffffff
+g910-led -fx-store cwave keys  f
+g910-led -fx-store color logo ffffffs
+
 # Initialize macro keys
 g910-led -mr 1
-g910-led -mn 0 
+g910-led -mn 0
 
 # Set gkeys independence
 g910-led -gkm 1
@@ -52,7 +57,7 @@ g910-led -kn 9 51FF83
 g910-led -kn 0 51FF83
 g910-led -kn "-" 51FF83
 g910-led -kn "=" 51FF83
-g910-led -kn "tilde" 51FF83
+
 
 # Set group modifiers and indicators to white.
 g910-led -gn modifiers FFFFFF
@@ -61,8 +66,10 @@ g910-led -gn modifiers FFFFFF
 # Set key highlights bright green 
 g910-led -kn ctrlr 0FFF00
 g910-led -kn printscr 0FFF00
-g910-led -kn backslash 0FFF00
-g910-led -kn num. 0FFF00
+g910-led -kn capslock 0FFF00
+g910-led -kn "tilde" 0FFF00
+g910-led -kn enter 0FFF00
+
 
 # Set page up and page down to lawn green
 g910-led -kn pageup 7CFC00
@@ -91,31 +98,33 @@ g910-led -kn num+ FF69B4
 g910-led -kn num- FF69B4
 g910-led -kn num/ FF69B4
 g910-led -kn num* FF69B4
+
 g910-led -kn numlock FF69B4
 g910-led -kn pausebreak FF69B4
 g910-led -kn scrolllock FF69B4
-g910-led -kn enter FF69B4
 g910-led -kn space FF69B4
 g910-led -kn winr FF69B4
 g910-led -kn winl FF69B4
 
 # Set c, v, menu, insert, tab, left_control to purple
-g910-led -k "c" F000FF
-g910-led -k "v" F000FF
-g910-led -k menu F000FF
-g910-led -k insert F000FF
-g910-led -k tab F000FF
-g910-led -k ctrll F000FF
+g910-led -kn "c" F000FF
+g910-led -kn "v" F000FF
+g910-led -kn menu F000FF
+g910-led -kn insert F000FF
+g910-led -kn tab F000FF
+g910-led -kn ctrll F000FF
+g910-led -kn backslash F000FF
+g910-led -kn num0 F000FF
+g910-led -kn num. F000FF
 
 
 g910-led -k home 00008B
 #g910-led -k end FF0000
 
 # set logo to white
-g910-led -fx-store color logo ffffff
+g910-led -kn logo ffffff
 
-g910-led --startup-mode color    
-
+g910-led --startup-mode board    
 
 
 # commit changes
