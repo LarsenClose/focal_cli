@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Store on board values for startup test
+# Testing Store on board values for startup 
 #g910-led -fx-store color all ffffff
-g910-led -fx-store cwave keys ffffff
+g910-led -fx-store cwave keys ff0000
 g910-led -fx-store color logo ffffff
 
 # Initialize macro n keys
@@ -136,6 +136,8 @@ ratbagctl "Logitech Gaming Mouse G502" profile 0 led 1 set color ff69b3
 
 # Set mouse profile enable
 ratbagctl "Logitech Gaming Mouse G502" profile 0 enable
+
+systemctl start g910-gkeys
 
 # Load profile for synthetic main
 /home/lclose/OpenRGB/OpenRGB --startminimized --profile ~/synthetic.orp 

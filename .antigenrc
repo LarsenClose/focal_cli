@@ -23,8 +23,8 @@ antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle gretzky/auto-color-ls
-antigen bundle wting/autojump 
 antigen bundle lukechilds/zsh-nvm
+
 
 export PATH="/usr/local/cuda-11.0/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda-11.0/lib64:$LD_LIBRARY_PATH"

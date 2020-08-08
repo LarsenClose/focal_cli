@@ -151,7 +151,7 @@ module.exports = {
 	  resizable: true,
 	  startAlone: false,
 	  startup: false,
-	  size: 0.375,
+	  size: 0.385,
 	  tray: true,
 	  unique: true
 	},
@@ -160,10 +160,10 @@ module.exports = {
       debug: false,
       hotkeys: {
         navigation: {
-          up: 'ctrl+alt+meta+up',
-          down: 'ctrl+alt+meta+down',
-          left: 'ctrl+alt+meta+left',
-          right: 'ctrl+alt+meta+right'
+          up: 'ctrl+alt+meta+W',
+          down: 'ctrl+alt+meta+S',
+          left: 'ctrl+alt+meta+A',
+          right: 'ctrl+alt+meta+D'
         },
         jump_prefix: 'ctrl+alt', // completed with 1-9 digits
         permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
@@ -199,7 +199,8 @@ module.exports = {
     "hyper-font-smoothing",
     "hyper-pane",
     "hyper-font-ligatures",
-    "hyper-hide-scroll"
+    "hyper-hide-scroll",
+    "hyperterm-final-say"
   ],
 
   // in development, you can create a directory under
@@ -209,6 +210,7 @@ module.exports = {
 
   keymaps: {
     // Example
-    // 'window:devtools': 'cmd+alt+o',
+     'window:devtools': 'ctrl+alt+0',
+     'pane:splitHorizontal': 'ctrl+shift+h'
   },
 };

@@ -1,0 +1,56 @@
+{
+    "color": "ff0000",
+    "keyboard_mapping": "en",
+    "g1": {
+        "hotkey_type": "shortcut",
+        "do": "ctrl+shift+h"
+    },
+    "g2": {
+        "hotkey_type": "shortcut",
+        "do": "ctrl+shift+d"
+    },
+    "g3": {
+        "hotkey_type": "shortcut",
+        "do": "ctrl+alt+1"
+    },
+    "g4": {
+        "hotkey_type": "shortcut",
+        "do": "ctrl+shift+c"
+    },
+    "g5": {
+        "hotkey_type": "shortcut",
+        "do": "ctrl+shift+v"
+    },
+    "g6": {
+        "hotkey_type": "shortcut",
+        "do": "win+6"
+    },
+    "g7": {
+        "hotkey_type": "shortcut",
+        "do": "win+7"
+    },
+    "g8": {
+        "hotkey_type": "shortcut",
+        "do": "win+8"
+    },
+    "g9": {
+        "hotkey_type": "shortcut",
+        "do": "win+9"
+    },
+    "m1": {
+        "hotkey_type": "nothing",
+        "do": ""
+    },
+    "m2": {
+        "hotkey_type": "nothing",
+        "do": ""
+    },
+    "m3": {
+        "hotkey_type": "nothing",
+        "do": ""
+    },
+    "mr": {
+        "hotkey_type": "typeout",
+        "do": "testing the frustration I can handle"
+    }
+}
