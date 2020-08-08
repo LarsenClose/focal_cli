@@ -1,0 +1,35 @@
+
+# Load oh-my-zsh library.
+antigen use oh-my-zsh
+
+
+
+# Load bundles from the default repo (oh-my-zsh).
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle docker
+antigen bunder colored-man-pages
+
+antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundle andrepolischuk/min
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle esc/conda-zsh-completion
+antigen bundle zzag/zsh-conda
+antigen bundle chrissicool/zsh-256color
+antigen bundle supercrabtree/k
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+antigen bundle ael-code/zsh-colored-man-pages
+antigen bundle gretzky/auto-color-ls
+antigen bundle wting/autojump 
+antigen bundle lukechilds/zsh-nvm
+
+export PATH="/usr/local/cuda-11.0/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-11.0/lib64:$LD_LIBRARY_PATH"
+export NVM_DIR="$HOME/.nvm"
+
+antigen apply
+                 
+source ~/min/min.zsh

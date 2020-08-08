@@ -2,10 +2,10 @@
 
 # Store on board values for startup test
 #g910-led -fx-store color all ffffff
-g910-led -fx-store cwave keys  f
-g910-led -fx-store color logo ffffffs
+g910-led -fx-store cwave keys ffffff
+g910-led -fx-store color logo ffffff
 
-# Initialize macro keys
+# Initialize macro n keys
 g910-led -mr 1
 g910-led -mn 0
 
@@ -84,13 +84,8 @@ g910-led -kn escape ff0000
 
 
 
-# Set group multimedia to white
-# g910-led -kn mute ffffff
-# g910-led -kn play ffffff
-# g910-led -kn stop ffffff
-# g910-led -kn prev ffffff
-# g910-led -kn next ffffff
-# g910-led -g multimedia ffffff
+# Set group multimedia to red has bug
+g910-led -gn multimedia ff0000
 
 # Set hotpink keys
 g910-led -kn numenter FF69B4

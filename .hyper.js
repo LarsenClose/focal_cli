@@ -4,17 +4,15 @@
 
 module.exports = {
   config: {
-
-
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 13 ,
+    fontSize: 13,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Inconsolata-g for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -32,7 +30,7 @@ module.exports = {
     cursorColor: 'rgba(248,28,229,0.8)',
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: '#FFF',
+    cursorAccentColor: '#000',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
     cursorShape: 'UNDERLINE',
@@ -51,7 +49,7 @@ module.exports = {
     selectionColor: 'rgba(248,28,229,0.3)',
 
     // border color (window, tabs)
-    borderColor: '#000',
+    borderColor: '#333',
 
     // custom CSS to embed in the main window
     css: '',
@@ -69,7 +67,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '4px 4px',
+    padding: '12px 14px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -138,38 +136,51 @@ module.exports = {
     // Whether to use the WebGL renderer. Set it to false to use canvas-based
     // rendering (slower, but supports transparent backgrounds)
     webGLRenderer: true,
+    
 
-//    visor: {
-//      hotkey: 'Super+Space',
-//      position: 'right', // or left, right, bottom
-//      width: 1000 , // Optional, defaults to half of viewable area for horizontal positions, 100% for vertical
-//      height: 1400 , // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
-//    },
+    
+	overlay: {
+	  alwaysOnTop: false,
+	  animate: true,
+	  hasShadow: false,
+	  hideDock: false,
+	  hideOnBlur: false,
+	  hotkeys: ['Alt+Space'],
+	  position: 'right',
+	  primaryDisplay: false,
+	  resizable: true,
+	  startAlone: false,
+	  startup: false,
+	  size: 0.375,
+	  tray: true,
+	  unique: true
+	},
 
-    overlay: {
-	alwaysOnTop: false,
-	animate: false,
-	hasShadow: false,
-	hideDock: false,
-	hideOnBlur: false,
-	hotkeys: {
-		open: ['Space + Alt'], // On MacOS hotkey is default to Option + Space!
-		close: ['Space + Alt'], // On MacOS hotkey is default to Option + Escape!
-	},
-	
-	position: 'right',
-	primaryDisplay: false,
-	resizable: true,
-	size: {
-		width: 0.25,
-		height: 1
-		
-	},
-	startAlone: true,
-	startup: true,
-	tray: true,
-	unique: false
-	}
+    paneNavigation: {
+      debug: false,
+      hotkeys: {
+        navigation: {
+          up: 'ctrl+alt+meta+up',
+          down: 'ctrl+alt+meta+down',
+          left: 'ctrl+alt+meta+left',
+          right: 'ctrl+alt+meta+right'
+        },
+        jump_prefix: 'ctrl+alt', // completed with 1-9 digits
+        permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
+        maximize: 'meta+enter'
+      },
+      showIndicators: true, // Show pane number
+      indicatorPrefix: '^⌥', // Will be completed with pane number
+      indicatorStyle: { // Added to indicator <div>
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        fontSize: '12px'
+      },
+      focusOnMouseHover: false,
+      inactivePaneOpacity: 0.8 // Set to 1 to disable inactive panes dimming
+    },
+    
 
 
 
@@ -183,20 +194,18 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyper-snazzy",
-    "hyper-highlight-active-pane",
-    "hyper-overlay",
-    "hyper-tab-icons",
-    "hyper-blink",
+    "hyperterm-overlay",
     "hyperminimal",
+    "hyper-font-smoothing",
     "hyper-pane",
-
+    "hyper-font-ligatures",
+    "hyper-hide-scroll"
   ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: [],
+  localPlugins: ["hyper-snazzy"],
 
   keymaps: {
     // Example
