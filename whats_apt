@@ -1,0 +1,16 @@
+
+
+# Powerline-fonts
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+# Get zsh min prompt manually to avoid bugs
+git clone https://github.com/andrepolischuk/min.git
+
+	# source it in dot file 'source min/min.zsh'
