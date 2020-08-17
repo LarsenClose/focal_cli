@@ -8,7 +8,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle command-not-found
 antigen bundle docker
-antigen bunder colored-man-pages
+antigen bundle colored-man-pages
 
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle andrepolischuk/min
